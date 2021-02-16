@@ -12,12 +12,18 @@ endif
 
 set number                      "Line numbers are good
 set backspace=indent,eol,start  "Allow backspace in insert mode
+set whichwrap+=<,>,h,l
 set history=1000                "Store lots of :cmdline history
 set showcmd                     "Show incomplete cmds down the bottom
 set showmode                    "Show current mode down the bottom
 set gcr=a:blinkon0              "Disable cursor blink
 set visualbell                  "No sounds
 set autoread                    "Reload files changed outside vim
+set ruler
+set lazyredraw
+set magic
+set showmatch
+set mat=2
 
 " This makes vim act like all other editors, buffers can
 " exist in the background without being in a window.
@@ -32,7 +38,8 @@ syntax on
 " The mapleader has to be set before vundle starts loading all
 " the plugins.
 let mapleader=","
-
+let g:snipMate = { 'snippet_version' : 1 }
+set mouse=a
 " =============== Vundle Initialization ===============
 " This loads all the plugins specified in ~/.vim/vundles.vim
 " Use Vundle plugin to manage all other plugins
@@ -78,7 +85,7 @@ set list listchars=tab:\ \ ,trail:·
 
 set nowrap       "Don't wrap lines
 set linebreak    "Wrap lines at convenient points
-
+set tw=500
 " ================ Folds ============================
 
 set foldmethod=indent   "fold based on indent

@@ -1,8 +1,12 @@
+set noshowmode
+set timeoutlen=1000
+set ttimeoutlen=0
+
 let g:lightline = {
       \ 'colorscheme': 'solarized',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'fugitive', 'readonly', 'filename', 'modified' ] ]
+      \             [ 'fugitive', 'readonly', 'filename', 'modified' ] ],
       \ },
       \ 'component_function': {
       \   'fugitive': 'MyFugitive',

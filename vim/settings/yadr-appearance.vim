@@ -1,5 +1,7 @@
 " Make it beautiful - colors and fonts
 
+set encoding=UTF-8
+
 if has("gui_running")
   "tell the term has 256 colors
   set t_Co=256
@@ -13,9 +15,9 @@ if has("gui_running")
   set columns=190
 
   if has("gui_gtk2")
-    set guifont=Inconsolata\ XL\ 12,Inconsolata\ 15,Monaco\ 12
+    set guifont=Fira\ Code\ 13,Fira\ Code\ 16,Roboto\ Mono\ 12
   else
-    set guifont=Inconsolata\ XL:h17,Inconsolata:h20,Monaco:h17
+    set guifont=Fira\ Code:h17,Fira\ Code:h20,Roboto\ Mono:h17
   end
 else
   let g:CSApprox_loaded = 1
@@ -27,5 +29,9 @@ else
   end
 endif
 
+highlight Normal ctermbg=NONE
+highlight nonText ctermbg=NONE
+highlight clear LineNr
+highlight clear SignColumn
 colorscheme solarized
 set background=dark
