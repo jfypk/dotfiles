@@ -131,7 +131,9 @@
 [include]
   path = .gitconfig.user
 [credential]
-  helper = osxkeychain
+	helper = osxkeychain
 [user]
   name = Jeff Park
   email = jeffrey.park@betterment.com
+[init]
+	templatedir = /Users/jeffreypark/.git-templates

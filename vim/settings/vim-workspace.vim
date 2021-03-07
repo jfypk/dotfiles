@@ -1,0 +1,1 @@
+nnoremap ,ws :ToggleWorkspace<CR>

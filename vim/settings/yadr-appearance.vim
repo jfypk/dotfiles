@@ -1,7 +1,7 @@
 " Make it beautiful - colors and fonts
 
 set encoding=UTF-8
-
+set guifont=:h
 if has("gui_running")
   "tell the term has 256 colors
   set t_Co=256
