@@ -33,5 +33,5 @@ highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE
 highlight clear LineNr
 highlight clear SignColumn
-colorscheme solarized
+colorscheme dracula " solarized
 set background=dark
