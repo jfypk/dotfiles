@@ -28,3 +28,10 @@ nnoremap ,gg :Ag ""<left>
 
 "Grep for usages of the current file
 nnoremap ,gcf :exec "Ag " . expand("%:t:r")<CR>
+
+"Make search act like search in modern browsers
+set incsearch
+
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep --smart-case'
+endif
