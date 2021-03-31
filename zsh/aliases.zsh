@@ -123,7 +123,7 @@ alias gds='git diff --staged -w'
 alias gpub='grb publish'
 alias gtr='grb track'
 alias gpl='git pull'
-alias gplr='git pull --rebase'
+alias grpl='git pull --rebase'
 alias gps='git push'
 alias gpsh='git push -u origin `git rev-parse --abbrev-ref HEAD`'
 alias gnb='git nb' # new branch aka checkout -b
@@ -210,3 +210,7 @@ alias tma="tmux attach-session -t"
 alias tmc="clear && tmux clear-history"
 alias tmk="tmux kill-session && tmux ls"
 alias tm="tmux new -s " $1
+
+#Ctags
+alias ctags="/usr/local/bin/ctags"
+

@@ -107,7 +107,7 @@ nmap <silent> ,qo :copen<CR>
 "with ,z and ,x
 nnoremap <silent> ,z :bp<CR>
 nnoremap <silent> ,x :bn<CR>
-
+nnoremap <silent> ,bd :bp\|bd \#<CR>
 " ==============================
 " Window/Tab/Split Manipulation
 " ==============================
@@ -168,17 +168,10 @@ nnoremap ' `
 nnoremap ` '
 
 "Move a line of text using command+[jk]
-nmap <M-j> mz:m+<cr>`z
-nmap <M-k> mz:m-2<cr>`z
-vmap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
-vmap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
-
-if has("mac") || has("macunix")
-  nmap <D-j> <M-j>
-  nmap <D-k> <M-k>
-  vmap <D-j> <M-j>
-  vmap <D-k> <M-k>
-endif
+nmap ,J mz:m+<cr>`z
+nmap ,K mz:m-2<cr>`z
+vmap ,J :m'>+<cr>`<my`>mzgv`yo`z
+vmap ,K :m'<-2<cr>`>my`<mzgv`yo`z
 
 " ============================
 " SplitJoin plugin
@@ -196,3 +189,6 @@ map <silent> ,hp :!open -a Safari %<CR><CR>
 " :cp)
 nnoremap <silent> <C-x> :cn<CR>
 nnoremap <silent> <C-z> :cp<CR>
+
+
+let g:snipMate = { 'snippet_version' : 1 }
