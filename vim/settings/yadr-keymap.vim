@@ -83,6 +83,10 @@ set showcmd
 set lbr
 set tw=500
 
+"Center search to center of screen
+set scrolloff=5
+syntax on
+
 "Return to last edit postiion when opening files
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 

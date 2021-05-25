@@ -47,3 +47,12 @@ Session.vim
 .sass-cache
 
 .undodir
+
+# Betterment
+# -----------------------------------------------------------------------------------------------
+src/retail/node_modules
+src/retail/retail/node_modules
+src/brochure-wp/node_modules
+src/retail/@betterment/retail/node_modules
+src/brochure-wp/@betterment/retail-brochure/node_modules
+src/retail/retaildb/db/archived_migrations

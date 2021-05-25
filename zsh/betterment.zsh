@@ -10,5 +10,6 @@ alias runrubo="git ls-files -m | xargs ls -1 2>/dev/null | grep '\.rb$' | xargs 
 alias runspec="git ls-files -m | xargs ls -1 2>/dev/null | grep '\_spec.rb$' | xargs bundle exec rspec"
 alias ctagretail="cd ~/src/retail && ctags --recurse=yes --exclude=.git --exclude=node_modules --exclude=tap"
 alias rag="ag $1 --ignore-dir retaildb/db/archived_migrations --ignore-dir node_modules --ignore-dir retail/vendor --ignore-dir retail/node_modules --ignore-dir retail/tmp --ignore-dir retail/public/packs-test --ignore-dir retail/public/packs"
+alias prettier="yarn prettier --write \"**\/*.{js,jsx,ts,tsx,json,css,scss}\""
 
 source "$HOME/.bootstrap/env.sh"

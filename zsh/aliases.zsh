@@ -35,7 +35,11 @@ alias .6='cd ../../../../../../'            # Go back 6 directory levels
 alias cls='clear;ls'
 
 # Copying
-alias pbcopy='xclip -sel clip'
+#alias pbcopy='xclip -sel clip'
+alias copyLastCmd="fc -ln -1 | sed '1s/^[[:space:]]*//' | awk 1 ORS=\"\" | pbcopy "
+
+# Search
+alias ag="ag --ignore-dir retail/investing/spec/dummy/tmp/ --ignore-dir retail/broker_dealer_core/spec/dummy/tmp --ignore-dir betterment-brochure/wp-content/themes/foley/dist" $1
 
 # Show human friendly numbers and colors
 alias df='df -h'
@@ -91,6 +95,7 @@ alias gcm='git ci -m'
 alias gcim='git ci -m'
 alias gci='git ci'
 alias gco='git co'
+alias gcom='git co main'
 alias gcp='git cp'
 alias ga='git add -A'
 alias gap='git add -p'
@@ -124,8 +129,8 @@ alias gpub='grb publish'
 alias gtr='grb track'
 alias gpl='git pull'
 alias grpl='git pull --rebase'
-alias gps='git push'
-alias gpsh='git push -u origin `git rev-parse --abbrev-ref HEAD`'
+alias gpsh='git push'
+alias gpsho='git push -u origin `git rev-parse --abbrev-ref HEAD`'
 alias gnb='git nb' # new branch aka checkout -b
 alias grs='git reset'
 alias grsh='git reset --hard'
